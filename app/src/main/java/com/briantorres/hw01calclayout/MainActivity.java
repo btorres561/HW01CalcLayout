@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     {
         Button b = (Button) v;
         Toast.makeText(this, b.getText().toString(), Toast.LENGTH_SHORT).show();
+
         Log.d("BTN_CLICK", b.getText().toString());
     }
 }
