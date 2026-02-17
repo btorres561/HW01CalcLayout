@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void refreshDisplays()
     { // update the top two row displays with the formula
-        aDisplay.setText(A+op);
+        aDisplay.setText(A + " " + op);
         bDisplay.setText(B);
     }
 
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
         {
             if(B.matches("0(\\.0*)?"))
             {
-                A = A + "/" + B;
+                A = A + " / " + B;
                 B = "Cannot divide by zero";
                 refreshDisplays();
                 A = "0";
@@ -167,26 +167,26 @@ public class MainActivity extends AppCompatActivity {
             else
             {
                 answer = Float.parseFloat(A)/Float.parseFloat(B);
-                A = A + "/" + B;
+                A = A + " / " + B;
             }
         }
         else if (op.equals("*"))
         {
             answer = Float.parseFloat(A)*Float.parseFloat(B);
-            A = A + "*" + B;
+            A = A + " * " + B;
         }
         else if (op.equals("-"))
         {
             answer = Float.parseFloat(A)-Float.parseFloat(B);
-            A = A + "-" + B;
+            A = A + " - " + B;
         }
         else
         {
             answer = Float.parseFloat(A)+Float.parseFloat(B);
-            A = A + "+" + B;
+            A = A + " + " + B;
         }
         B = Float.toString(answer);
-        op = "=";
+        op = " = ";
         refreshDisplays();
         A = "0";
         B = "0";
