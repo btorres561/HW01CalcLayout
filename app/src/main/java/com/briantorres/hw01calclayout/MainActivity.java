@@ -158,6 +158,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 A = A + " / " + B;
                 B = "Cannot divide by zero";
+                op = " = ";
                 refreshDisplays();
                 A = "0";
                 B = "0";
