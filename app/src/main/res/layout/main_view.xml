@@ -48,7 +48,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#78424242"
-            android:onClick="onClick"
+            android:onClick="btnPressAC"
             android:text="AC"
             android:textColorLink="@color/cardview_dark_background" />
 
@@ -59,7 +59,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#757476"
-            android:onClick="onClick"
+            android:onClick="btnPressSign"
             android:text="+/-" />
 
         <Button
@@ -69,7 +69,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#747375"
-            android:onClick="onClick"
+            android:onClick="btnPressPercent"
             android:text="%" />
 
         <Button
@@ -79,7 +79,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#FFC107"
-            android:onClick="onClick"
+            android:onClick="btnPressOperator"
             android:text="/" />
 
     </LinearLayout>
@@ -96,7 +96,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#424242"
-            android:onClick="onClick"
+            android:onClick="btnPressNumber"
             android:text="7" />
 
         <Button
@@ -106,7 +106,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#424242"
-            android:onClick="onClick"
+            android:onClick="btnPressNumber"
             android:text="8" />
 
         <Button
@@ -116,7 +116,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#424242"
-            android:onClick="onClick"
+            android:onClick="btnPressNumber"
             android:text="9" />
 
         <Button
@@ -126,7 +126,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#FFC107"
-            android:onClick="onClick"
+            android:onClick="btnPressOperator"
             android:text="*" />
 
     </LinearLayout>
@@ -143,7 +143,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#424242"
-            android:onClick="onClick"
+            android:onClick="btnPressNumber"
             android:text="4" />
 
         <Button
@@ -153,7 +153,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#424242"
-            android:onClick="onClick"
+            android:onClick="btnPressNumber"
             android:text="5" />
 
         <Button
@@ -163,7 +163,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#424242"
-            android:onClick="onClick"
+            android:onClick="btnPressNumber"
             android:text="6" />
 
         <Button
@@ -173,7 +173,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#FFC107"
-            android:onClick="onClick"
+            android:onClick="btnPressOperator"
             android:text="-" />
 
     </LinearLayout>
@@ -190,7 +190,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#424242"
-            android:onClick="onClick"
+            android:onClick="btnPressNumber"
             android:text="1" />
 
         <Button
@@ -200,7 +200,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#424242"
-            android:onClick="onClick"
+            android:onClick="btnPressNumber"
             android:text="2" />
 
         <Button
@@ -210,7 +210,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#424242"
-            android:onClick="onClick"
+            android:onClick="btnPressNumber"
             android:text="3" />
 
         <Button
@@ -220,7 +220,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="#FFC107"
-            android:onClick="onClick"
+            android:onClick="btnPressOperator"
             android:text="+" />
 
     </LinearLayout>
@@ -237,7 +237,7 @@
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:backgroundTint="@color/cardview_dark_background"
-            android:onClick="onClick"
+            android:onClick="btnPressNumber"
             android:text="0" />
 
         <Button
@@ -247,7 +247,7 @@
             android:layout_margin="5sp"
             android:layout_weight="0"
             android:backgroundTint="@color/cardview_dark_background"
-            android:onClick="onClick"
+            android:onClick="btnPressPeriod"
             android:text="." />
 
         <Button
@@ -257,7 +257,7 @@
             android:layout_margin="5sp"
             android:layout_weight="0"
             android:backgroundTint="#FFC107"
-            android:onClick="onClick"
+            android:onClick="btnPressEqual"
             android:text="=" />
     </LinearLayout>
 

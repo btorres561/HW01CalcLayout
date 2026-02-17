@@ -59,36 +59,138 @@ public class MainActivity extends AppCompatActivity {
     {
         refreshDisplays();
         String value = (String) ((Button) v).getText();
+        if (B.equals("0"))
+        {
+            B = value;
+        }
+        else
+        {
+            B = B + value;
+        }
+        refreshDisplays();
     }
 
     public void btnPressOperator(View v)
     {
         refreshDisplays();
         String value = (String) ((Button) v).getText();
+        op = value;
+        A = B;
+        B = "0";
+        refreshDisplays();
     }
 
     public void btnPressAC(View v)
     {
+        refreshDisplays();
+        A = "0";
+        B = "0";
+        op = "+";
         refreshDisplays();
     }
 
     public void btnPressSign(View v)
     {
         refreshDisplays();
+
+        // Do nothing for plain zero
+        if (B.matches("0(\\.0*)?"))
+            return;
+
+        if (B.contains(".")) {
+            // decimal number → use float
+            float bFloat = Float.parseFloat(B);
+            bFloat *= -1;
+            B = Float.toString(bFloat);
+        } else {
+            // whole number → use int
+            int bInt = Integer.parseInt(B);
+            bInt *= -1;
+            B = Integer.toString(bInt);
+        }
+
+        refreshDisplays();
     }
 
     public void btnPressPercent(View v)
     {
         refreshDisplays();
+        float answer = 0;
+        if(!B.matches("0(\\.0*)?"))
+        {
+            answer = (Float.parseFloat(A)/Float.parseFloat(B))*100;
+            A = A + "/" + B;
+            B = Float.toString(answer);
+        }
+        else
+        {
+            A = A + "/" + B;
+            B = "Cannot divide by zero";
+        }
+        op = "%";
+        refreshDisplays();
+        A = "0";
+        B = "0";
+        op = "+";
     }
 
     public void btnPressPeriod(View v)
     {
+        refreshDisplays();
+        if(!B.contains("."))
+        {
+            B = B + ".";
+        }
         refreshDisplays();
     }
 
     public void btnPressEqual(View v)
     {
         refreshDisplays();
+        float answer = 0;
+        if(A.matches("0(\\.0*)?") && B.matches("0(\\.0*)?"))
+        {
+            return;
+        }
+        if(op.equals("/"))
+        {
+            if(B.matches("0(\\.0*)?"))
+            {
+                A = A + "/" + B;
+                B = "Cannot divide by zero";
+                refreshDisplays();
+                A = "0";
+                B = "0";
+                op = "+";
+                return;
+            }
+            else
+            {
+                answer = Float.parseFloat(A)/Float.parseFloat(B);
+                A = A + "/" + B;
+            }
+        }
+        else if (op.equals("*"))
+        {
+            answer = Float.parseFloat(A)*Float.parseFloat(B);
+            A = A + "*" + B;
+        }
+        else if (op.equals("-"))
+        {
+            answer = Float.parseFloat(A)-Float.parseFloat(B);
+            A = A + "-" + B;
+        }
+        else
+        {
+            answer = Float.parseFloat(A)+Float.parseFloat(B);
+            A = A + "+" + B;
+        }
+        B = Float.toString(answer);
+        op = "=";
+        refreshDisplays();
+        A = "0";
+        B = "0";
+        op = "+";
     }
+
 }
