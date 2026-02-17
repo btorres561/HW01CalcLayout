@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#78424242"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressAC"
             android:text="AC"
             android:textColorLink="@color/cardview_dark_background" />
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#757476"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressSign"
             android:text="+/-" />
 
@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#747375"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressPercent"
             android:text="%" />
 
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#FFC107"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressOperator"
             android:text="/" />
 
@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#424242"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressNumber"
             android:text="7" />
 
@@ -105,7 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#424242"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressNumber"
             android:text="8" />
 
@@ -115,7 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#424242"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressNumber"
             android:text="9" />
 
@@ -125,7 +125,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#FFC107"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressOperator"
             android:text="*" />
 
@@ -134,6 +134,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#7C4DFF"
         android:orientation="horizontal">
 
         <Button
@@ -142,7 +143,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#424242"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressNumber"
             android:text="4" />
 
@@ -152,7 +153,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#424242"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressNumber"
             android:text="5" />
 
@@ -162,7 +163,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#424242"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressNumber"
             android:text="6" />
 
@@ -172,7 +173,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#FFC107"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressOperator"
             android:text="-" />
 
@@ -189,7 +190,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#424242"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressNumber"
             android:text="1" />
 
@@ -199,7 +200,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#424242"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressNumber"
             android:text="2" />
 
@@ -209,7 +210,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#424242"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressNumber"
             android:text="3" />
 
@@ -219,7 +220,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="#FFC107"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressOperator"
             android:text="+" />
 
@@ -236,7 +237,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:backgroundTint="@color/cardview_dark_background"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressNumber"
             android:text="0" />
 
@@ -246,7 +247,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="0"
-            android:backgroundTint="@color/cardview_dark_background"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressPeriod"
             android:text="." />
 
@@ -256,7 +257,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:layout_weight="0"
-            android:backgroundTint="#FFC107"
+            android:backgroundTint="#671BC8"
             android:onClick="btnPressEqual"
             android:text="=" />
     </LinearLayout>
